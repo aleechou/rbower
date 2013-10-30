@@ -1,0 +1,17 @@
+{
+  "name": "rbower",
+  "version": "0.0.1",
+  "description": "Recursively install all bower components of all your dependent npm modules ;",
+  "main": "index.js",
+  "bin": {
+    "rbower": "bin/rbower"
+  },
+  "repository": "",
+  "author": "alee",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "~1.2.7",
+    "rimraf": "~2.2.2",
+    "bower-config": "~0.5.0"
+  }
+}

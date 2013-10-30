@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var cmds = require("../") ;
+var cmd = process.argv[2] ;
+
+if(cmds[cmd]){
+    cmds[cmd](function(err,installed){
+	if(err)
+	    console.error(err) ;
+
+	if(installed)
+	    console.log("bower components installation has finished") ;
+    }) ;
+}
